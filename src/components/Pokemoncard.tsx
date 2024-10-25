@@ -1,4 +1,8 @@
-const pokemonList = [
+interface pokemon{
+    name: string,
+    imgSrc: string,
+  }
+  const pokemonList = [
     {
       name: "bulbasaur",
       imgSrc:
@@ -8,6 +12,7 @@ const pokemonList = [
       name: "mew",
     },
   ];
+  
 function PokemonCard({pokemon}) {
   return (
     <div>
