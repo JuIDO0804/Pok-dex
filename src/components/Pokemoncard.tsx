@@ -8,8 +8,7 @@ const pokemonList = [
       name: "mew",
     },
   ];
-function PokemonCard() {
-    const pokemon = pokemonList [1] ;
+function PokemonCard({pokemon}) {
   return (
     <div>
       <figure>
@@ -18,5 +17,6 @@ function PokemonCard() {
       <figcaption>{pokemon.name} </figcaption>
     </div>
   );
+  
 }
 export default PokemonCard;
